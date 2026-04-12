@@ -74,6 +74,10 @@ jobs:
           name: error-logs
           path: error_logs.txt
 
+      - name: Cleanup resources
+        if: always()
+        run: echo "Cleaning up temporary cloud volumes..."
+
   deploy:
     needs: train
     runs-on: ubuntu-latest
