@@ -20,5 +20,5 @@ acc = accuracy_score(y_test, pred)
 print("Training completed")
 print("Accuracy:", acc)
 
-with open("model_info.txt", "w") as f:
-    f.write("run-id")
+with open("model_info.txt", "w") as f1:
+    f1.write("run-id")
